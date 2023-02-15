@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
     Verdana, sans-serif;
+  line-height: 1.5rem;
 }
 
 body {
@@ -12,39 +13,33 @@ body {
   backdrop-filter: blur(2px);
 }
 
+/********** HEADER ********* */
+
 header {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   min-height: 35vh;
-  /* margin-top: 50px; */
   padding: 10px 80px;
-  /* border-top: 50px solid rgb(243, 235, 162); */
   background-image: url('image/design2_image1.jpg');
   background-position: 0 -100px;
-  /* object-fit: cover; */
 }
 
 h1 {
-  /* position: absolute; */
   font-style: italic;
-  /* margin-left: 10px; */
   font-size: 40px;
   padding: 10px;
 }
 .imageLogo {
-  /* vertical-align: top; */
-  /* position: absolute; */
-  /* left: 0; */
-  /* top: 330px; */
-  /* padding: 10px; */
   width: 80px;
   height: 80px;
   border-radius: 15px;
   border: 0.1px solid rgb(109, 109, 109);
-  /* background-color: rgba(243, 235, 162, 0.747); */
   background-color: white;
 }
+
+/********** NAVBAR ********* */
+
 .containerNav {
   display: flex;
   flex-direction: row-reverse;
@@ -53,7 +48,6 @@ h1 {
   width: 100%;
   height: 8vh;
   padding: 10px 80px;
-  /* background-color: rgb(243, 235, 162); */
   background-color: rgb(255, 243, 176);
   box-shadow: 2px 2px rgba(122, 122, 122, 0.486);
 }
@@ -62,50 +56,33 @@ h1 {
 }
 .navlist {
   display: inline-block;
-  /* position: fixed; */
-  /* right: 20px; */
-  /* width: 100%; */
-  /* top: 10px; */
-  /* height: 5vh; */
-
   padding: 10px;
   text-align: end;
-  /* background-color: rgb(243, 235, 162); */
 }
 
 .navlist a {
   padding: 5px 10px;
   margin-left: 10px;
-  /* background-color: rgb(99, 99, 243); */
-  /* background-color: rgb(51, 92, 103); */
-  /* border: 1px solid rgb(51, 92, 103); */
   color: rgb(51, 92, 103);
   font-size: 20px;
   text-decoration: none;
-  /* border: 0.1px solid rgb(109, 109, 109); */
-  /* border-radius: 5px; */
-  /* box-shadow: 2px 2px rgba(122, 122, 122, 0.486); */
   transform: all 0.45s ease;
   transition: 0.4s;
 }
 
 .navlist a:hover {
   border-bottom: 1px solid darkcyan;
-  /* background-color: darkcyan; */
-  /* color: white; */
 }
 
 .navlist a:active {
   border-bottom: 1px solid darkcyan;
-  /* background-color: darkcyan;
-  color: white; */
 }
 
 .navlist a:focus {
   border-bottom: 1px solid darkcyan;
-  /* background-color: darkcyan;
-  color: white; */
 }
+
+/********** MAIN ********* */
 
 main {
   min-height: 60vh;
@@ -115,7 +92,6 @@ main {
 
 h2 {
   display: inline-block;
-  /* background-color: rgb(243, 235, 162); */
   text-align: center;
   padding: 8px;
   font-size: 25px;
@@ -130,12 +106,13 @@ h3 {
 .containeer {
   display: inline-block;
   min-height: 60vh;
-  /* display: flex; */
-  /* width: 100%; */
   margin: 0 80px;
   padding: 50px;
   border: 0.1px solid rgba(192, 192, 192, 0.486);
   background-color: rgb(235, 235, 235);
+}
+.containeer span {
+  font-weight: bold;
 }
 
 p {
@@ -147,6 +124,8 @@ img {
   border-radius: 15px;
   width: 500px;
 }
+
+/********** LISTA ********* */
 
 ol > li {
   list-style-position: inside;
@@ -160,6 +139,8 @@ ol > li span {
   margin-left: 15px;
 }
 
+/********** TABLA ********* */
+
 table {
   height: 50vh;
   width: 40rem;
@@ -167,8 +148,9 @@ table {
   table-layout: auto;
   border-spacing: 5px;
   border-collapse: collapse;
-  /* empty-cells: hide; */
-  /* caption-side: bottom; */
+}
+thead th {
+  font-weight: bold;
 }
 
 table,
@@ -176,11 +158,14 @@ th,
 td {
   border: 0.1px solid rgb(109, 109, 109);
   text-align: center;
+  font-weight: normal;
 }
 
 caption {
   margin-bottom: 10px;
 }
+
+/********** FOOTER ********* */
 
 footer {
   display: flex;
