@@ -123,6 +123,7 @@ h3 {
   font-style: italic;
   font-weight: bold;
   font-size: 20px;
+  color: darkcyan;
 }
 
 p {
@@ -133,12 +134,12 @@ p {
 .sectionHome {
   display: flex;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1500px;
   margin-bottom: 30px;
   padding: 10px 20px;
   border: 0.1px solid rgba(192, 192, 192, 0.486);
-  border-right: 3px solid #9e2a2b;
-  border-left: 3px solid #9e2a2b;
+  border-right: 3px solid darkcyan;
+  border-left: 3px solid darkcyan;
   box-shadow: 5px 5px rgba(172, 172, 172, 0.486);
 }
 .sectionHome > div {
@@ -185,7 +186,7 @@ p {
 }
 
 .containeer section {
-  max-width: 1000px;
+  max-width: 1500px;
   width: 100%;
 }
 
@@ -213,7 +214,7 @@ section {
   box-shadow: 5px 5px rgba(172, 172, 172, 0.486);
 }
 section h3 {
-  background-color: rgba(51, 92, 103, 0.096);
+  /* background-color: rgba(51, 92, 103, 0.096); */
   /* border-bottom: 0.1px solid rgba(192, 192, 192, 0.486); */
 }
 
@@ -248,13 +249,18 @@ ul > li {
 .tableContain {
   display: flex;
   flex-direction: column;
+  max-width: 1500px;
   width: 90%;
   align-items: center;
   margin-bottom: 20px;
 }
+.tableContain > div span {
+  color: darkcyan;
+}
 .tableContain > div {
   width: 90%;
 }
+
 table {
   height: 50vh;
   width: 90%;
@@ -291,6 +297,7 @@ caption {
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 90%;
+  max-width: 1500px;
 }
 #Katzenmaier,
 #Greenbay,
@@ -298,7 +305,7 @@ caption {
 #Marjorie,
 #North,
 #South {
-  max-width: 1000px;
+  max-width: 1500px;
   width: 45%;
 }
 
@@ -320,9 +327,55 @@ caption {
 /********** FORM ********* */
 
 form {
-  border: 2px solid white;
-  border-radius: 1rem;
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+}
+form fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: flex-start;
+  /* border: 1px solid rgb(51, 92, 103);
+  border-radius: 1rem; */
+  border: 0.1px solid rgba(192, 192, 192, 0.486);
+  border-right: 3px solid darkcyan;
+  border-left: 3px solid darkcyan;
+  box-shadow: 5px 5px rgba(172, 172, 172, 0.486);
   padding: 1rem;
+  margin-bottom: 20px;
+}
+form legend {
+  color: darkcyan;
+}
+form input {
+  border: 0.1px solid rgba(192, 192, 192, 0.486);
+  outline: 0 none;
+  padding: 0 5px;
+}
+
+form button {
+  color: darkcyan;
+  font-size: 18px;
+  padding: 2px 8px;
+  width: 13vw;
+  cursor: pointer;
+  border: 0.1px solid rgba(192, 192, 192, 0.486);
+  box-shadow: 3px 3px rgba(172, 172, 172, 0.486);
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2px 20px;
+}
+.submit button:hover {
+  background-color: rgba(255, 243, 176, 0.164);
 }
 
 /********** FOOTER ********* */

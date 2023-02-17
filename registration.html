@@ -71,7 +71,7 @@
                         </select>
                     </label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="checkbox">
                     <legend>Which elementary school do you live near?</legend>
                     <p>Closest School</p>
                     <label>
@@ -99,7 +99,7 @@
                         <input name="color3" type="checkbox" value="south">
                     </label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="checkbox">
                     <legend>What position(s) do you normally play? (check all that apply)</legend>
                     <label>
                         Forward:
@@ -118,7 +118,7 @@
                         <input name="color3" type="checkbox" value="goalkeeper">
                     </label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="checkbox">
                     <legend>Uniform Size:</legend>
                     <label>
                         Youth Small
@@ -126,7 +126,7 @@
                     </label>
                     <label>
                         Youth Medium
-                        <input name="talle" checked type="radio" value="youth_medium">
+                        <input name="talle"  type="radio" value="youth_medium">
                     </label>
                     <label>
                         Youth Large
@@ -171,7 +171,9 @@
                         <input name="date_signing" type="text">
                     </label><br>
                 </fieldset>
-                <button>Submit</button>
+                <div class="submit">
+                    <button>Submit</button>
+                </div>
             </form>
         </div>
     </main>
