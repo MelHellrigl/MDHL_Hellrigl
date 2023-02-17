@@ -34,7 +34,7 @@ h1 {
   font-size: 50px;
   padding: 45px 10px;
   color: rgb(247, 226, 111);
-  text-shadow: 2px 2px #9e2a2b;
+  text-shadow: 2px 2px darkcyan;
 }
 .imageLogo {
   width: 100px;
@@ -152,7 +152,7 @@ p {
   width: 20%;
 }
 .sectionHome div p {
-  margin: 0;
+  margin: 0 0 0 15px;
 }
 .sectionHome > img {
   border-radius: 15px;
@@ -204,18 +204,22 @@ p {
   filter: grayscale(50%);
   float: right;
 } */
-/* section {
+section {
   margin-bottom: 20px;
   padding: 10px 20px;
   border: 0.1px solid rgba(192, 192, 192, 0.486);
-  border-right: 3px solid #9e2a2b;
-  border-left: 3px solid #9e2a2b;
+  border-right: 3px solid darkcyan;
+  border-left: 3px solid darkcyan;
   box-shadow: 5px 5px rgba(172, 172, 172, 0.486);
-} */
+}
+section h3 {
+  background-color: rgba(51, 92, 103, 0.096);
+  /* border-bottom: 0.1px solid rgba(192, 192, 192, 0.486); */
+}
 
 .h3notItalic {
   font-style: normal;
-  margin: 15px 0 20px 20px;
+  margin: 0 0 20px 0;
   font-weight: normal;
   font-size: 16px;
 }
@@ -227,14 +231,17 @@ p {
 
 ol > li {
   list-style-position: inside;
-  margin: 8px 0;
+  margin: 8px 0 20px 20px;
 }
 ol > li span {
   font-weight: bold;
 }
-.ulList > li {
+ul > li {
   list-style-position: inside;
-  margin-left: 15px;
+  margin: 8px 0 20px 20px;
+}
+.ulList > li {
+  margin-left: 20px;
 }
 
 /********** TABLA ********* */
@@ -243,10 +250,14 @@ ol > li span {
   flex-direction: column;
   width: 90%;
   align-items: center;
+  margin-bottom: 20px;
+}
+.tableContain > div {
+  width: 90%;
 }
 table {
   height: 50vh;
-  width: 60rem;
+  width: 90%;
   margin: 20px;
   table-layout: auto;
   border-spacing: 5px;
@@ -254,24 +265,47 @@ table {
 }
 thead th {
   font-weight: bold;
+  padding: 8px;
+  background-color: rgba(51, 92, 103, 0.199);
 }
 
 table,
 th,
 td {
-  border: 0.1px solid rgb(109, 109, 109);
+  /* border: 0.1px solid rgb(109, 109, 109); */
+  border: 3px solid rgba(51, 92, 103, 0.103);
+  padding: 8px;
   text-align: center;
   font-weight: normal;
+}
+tbody a {
+  text-decoration: none;
+  color: darkcyan;
 }
 
 caption {
   margin-bottom: 10px;
 }
+.containMap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+}
+#Katzenmaier,
+#Greenbay,
+#Howard,
+#Marjorie,
+#North,
+#South {
+  max-width: 1000px;
+  width: 45%;
+}
 
 .top {
   position: fixed;
   z-index: 1000;
-  right: 90px;
+  right: 100px;
   bottom: 100px;
 }
 
