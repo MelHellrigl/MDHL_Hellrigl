@@ -62,10 +62,6 @@ h1 {
   margin-left: 40px;
 }
 .navlist {
-  /* display: inline-block;
-  padding: 10px;
-  text-align: end; */
-
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -156,10 +152,10 @@ p {
   margin: 0 0 0 15px;
 }
 .sectionHome > img {
-  border-radius: 15px;
-  max-width: 20%;
-  float: right;
   width: 100%;
+  max-width: 20%;
+  margin-left: 10px;
+  border-radius: 15px;
   filter: grayscale(50%);
   float: right;
 }
@@ -190,21 +186,6 @@ p {
   width: 100%;
 }
 
-/* .containeer div {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  align-items: center;
-} */
-
-/* .containeer img {
-  border-radius: 15px;
-  max-width: 150px;
-  max-width: 500px;
-  width: 100%;
-  filter: grayscale(50%);
-  float: right;
-} */
 section {
   margin-bottom: 20px;
   padding: 10px 20px;
@@ -212,10 +193,6 @@ section {
   border-right: 3px solid darkcyan;
   border-left: 3px solid darkcyan;
   box-shadow: 5px 5px rgba(172, 172, 172, 0.486);
-}
-section h3 {
-  /* background-color: rgba(51, 92, 103, 0.096); */
-  /* border-bottom: 0.1px solid rgba(192, 192, 192, 0.486); */
 }
 
 .h3notItalic {
@@ -278,7 +255,6 @@ thead th {
 table,
 th,
 td {
-  /* border: 0.1px solid rgb(109, 109, 109); */
   border: 3px solid rgba(51, 92, 103, 0.103);
   padding: 8px;
   text-align: center;
@@ -337,8 +313,6 @@ form fieldset {
   flex-direction: column;
   align-items: flex-end;
   align-content: flex-start;
-  /* border: 1px solid rgb(51, 92, 103);
-  border-radius: 1rem; */
   border: 0.1px solid rgba(192, 192, 192, 0.486);
   border-right: 3px solid darkcyan;
   border-left: 3px solid darkcyan;
@@ -399,10 +373,190 @@ footer h3 {
   font-style: normal;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 1003px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    padding: 20px 10px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  .navlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navlist a {
+    font-size: 16px;
+  }
+  .sectionHome div h3 {
+    width: 30%;
+  }
+
+  table th,
+  td {
+    font-size: 14px;
+    border: 3px solid rgba(51, 92, 103, 0.103);
+    padding: 2px 8px;
+    text-align: center;
+    font-weight: normal;
+  }
+  tbody a {
+    font-size: 18px;
+  }
+  .top {
+    position: fixed;
+    right: 70px;
+  }
+  .h3notItalic,
+  h3 {
+    font-size: 18px;
+  }
+  form label {
+    font-size: 16px;
+  }
+  form p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 512px) {
+  header {
+    padding: 10px 20px;
+    min-height: 8vh;
+  }
+  h1 {
+    font-size: 25px;
+    line-height: 2rem;
+    padding: 0px 10px;
+  }
+  .imageLogo {
+    width: 70px;
+    height: 70px;
+  }
+  p,
+  li {
+    font-size: 14px;
+  }
   .navlist {
     display: flex;
     flex-direction: column;
     height: auto;
+    padding: 10px 20px;
+    background-color: rgb(51 92 103 / 59%);
+  }
+  /* .navlist a {
+    width: 100%;
+    text-align: center;
+  } */
+  .containeer {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .sectionHome {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .sectionHome > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .sectionHome div h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .sectionHome div p {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .sectionHome > img {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+  .tableContain {
+    width: 100%;
+    align-items: center;
+  }
+  table th,
+  td {
+    padding: 2px 6px;
+  }
+  .containMap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #Katzenmaier,
+  #Greenbay,
+  #Howard,
+  #Marjorie,
+  #North,
+  #South {
+    width: 100%;
+  }
+  form button {
+    width: 30vw;
+  }
+}
+form label {
+  font-size: 14px;
+}
+form p {
+  font-size: 14px;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+}
+.top {
+  position: fixed;
+  z-index: 2;
+  right: 45%;
+  bottom: 50px;
+}
+footer {
+  background-color: rgb(255 243 176 / 59%);
+}
+
+@media (max-width: 375px) {
+  .tableContain > div {
+    width: 100%;
+  }
+  table th,
+  td {
+    padding: 2px 4px;
+  }
+  .checkbox {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 320px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 9vh;
+  }
+  .tableContain > div {
+    width: 100%;
+  }
+  table th,
+  td {
+    padding: 2px 0px;
   }
 }
