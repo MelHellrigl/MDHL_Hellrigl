@@ -13,17 +13,21 @@
 
 <body>
     <header>
-        <h1>Mighty Ducks Hockey League</h1>
-        <img src="./image/logo_Mighty_ducks-01.png" alt="Logo de Mighty Ducks Hockey League" class="imageLogo">
+        <div class="containerHeader">
+            <div class="containerLogoH1">
+              <img src="./image/logo_Mighty_ducks-02.png" alt="Logo de Mighty Ducks Hockey League" class="imageLogo">
+              <h1>Mighty Ducks Hockey League</h1>
+            </div>
+        <nav class="navlist">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./game-information.html">Game Info</a>
+            <a href="./rules.html">Rules</a>
+            <a href="#" id="--active">Registration</a>
+        </nav>
+        </div>
     </header>
-    <nav class="navlist">
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./game-information.html">Game Info</a>
-        <a href="./rules.html">Rules</a>
-        <a href="#" id="--active">Registration</a>
-    </nav>
     <main>
         <div class="containeer">
             <h2>Registration Form</h2>
@@ -36,20 +40,24 @@
                     <br>
                     <label>
                         Last Name:
+                    </label>
                         <input name="last_name" type="text" maxlength="80">
-                    </label><br>
+                    <br>
                     <label>
                         Street Address:
+                    </label>
                         <input name="street_address" type="text">
-                    </label><br>
+                    <br>
                     <label>
                         Zip Code:
+                    </label>
                         <input name="zip_code" type="number">
-                    </label><br>
+                    <br>
                     <label>
                         Birth Date:
+                    </label>
                         <input name="birth_date" type="date">
-                    </label><br>
+                    <br>
                     <label>
                         Parent/Guardian:
                     </label>
